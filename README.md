@@ -1,44 +1,7 @@
+Author Harita Lolla 
+
 # Currency-convertor-
-C# web application that converts dollars to different currencies.  
 
-/*
- * Author Harita Lolla
- */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+Simple web application created in C# that uses static values for converting curruncies.
 
-namespace DollarConversion
-{
-    public partial class Default : System.Web.UI.Page
-    {
-        /*
-         * Result is displayed when the action button is displayed.
-         * @return Result
-         */
-        protected void btnOK_Click(object sender, EventArgs e)
-        {
-            // conversion formula
-            try
-            {
-                double i = Convert.ToDouble(dlstCurrencies.SelectedValue.ToString()) * Convert.ToDouble(txtbxDollar.Text.ToString());
-
-                lblMessage.Text = txtbxDollar.Text + " " + "US dollar =" + " " + i.ToString() + " " + dlstCurrencies.SelectedItem;
-
-            }
-
-            catch (FormatException)
-            {
-                // Error message 
-                lblMessage.Text = "The number you typed in was not in correct format. Use only numbers";
-            }
-        }
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
-}
+This application can give a good understanding of how to use bulit in functions in visual studios to create web pages without prior knowledge in html. 
